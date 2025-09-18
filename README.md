@@ -2,7 +2,9 @@
 
 ## Overview
 
-The **Pastimes** website is an online platform for buying and selling second-hand branded clothing.
+Pastimes is a second-hand branded clothing e-commerce platform.
+It allows buyers to browse and purchase clothing items with shopping cart and checkout features, and gives admins a secure dashboard to manage products, users, and orders.
+The project is built using PHP, MySQL, HTML, CSS, and JavaScript.
 
 * **Buyers** can browse, purchase items, and manage shopping carts.
 * **Admins** can manage users, products, and orders through a secure dashboard.
