@@ -9,6 +9,7 @@ The project is built using PHP, MySQL, HTML, CSS, and JavaScript.
 * **Buyers** can browse, purchase items, and manage shopping carts.
 * **Admins** can manage users, products, and orders through a secure dashboard.
 
+Link to the video: https://drive.google.com/file/d/1KHlOpZil4siDrspNQkpLq0tC2PVSvRSN/view?usp=sharing
 ---
 
 ## Buyer Page
