@@ -1,119 +1,402 @@
-# Pastimes 
+<div align="center">
 
-## Overview
+# Pastimes
 
-Pastimes is a second-hand branded clothing e-commerce platform.
-It allows buyers to browse and purchase clothing items with shopping cart and checkout features, and gives admins a secure dashboard to manage products, users, and orders.
-The project is built using PHP, MySQL, HTML, CSS, and JavaScript.
+### A full-stack second-hand fashion e-commerce platform built with PHP, MySQL, HTML, CSS and JavaScript.
 
-* **Buyers** can browse, purchase items, and manage shopping carts.
-* **Admins** can manage users, products, and orders through a secure dashboard.
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-Link to the video: https://drive.google.com/file/d/1KHlOpZil4siDrspNQkpLq0tC2PVSvRSN/view?usp=sharing
----
+**Author:** **Lwandle Chauke**
 
-## Buyer Page
-
-The Buyer Page is designed for customers who want to purchase clothing from the website.
-
-### Key Features
-
-* **Product Browsing** – Browse items by category: Women, Men, Kids, Accessories, Shoes.
-* **Search & Filters** – Search by category, price range, or size.
-* **Add to Cart** – Select and store items in a shopping cart.
-* **Cart Summary** – View items, quantities, and total price.
-* **Checkout** – Enter shipping details, payment method, and confirm orders.
-* **Order Confirmation** – Receive an order confirmation with details (Order Number, Session ID).
-
-### Components
-
-1. **Product Listings**
-
-   * Dynamic display using data from `tblclothes`.
-   * Grid layout with images, prices, sizes.
-
-2. **Cart Functionality**
-
-   * Add/remove items.
-   * Automatic updates to totals.
-
-3. **Checkout Form**
-
-   * Billing details, shipping address, payment method.
-   * Orders saved in `tblorders`.
-
-4. **Order Confirmation**
-
-   * Displays confirmation message + order details.
-
-### Page Flow
-
-1. Browse → 2. Add to Cart → 3. View Cart → 4. Checkout → 5. Confirmation
+</div>
 
 ---
 
-## Admin Page
+# Overview
 
-The Admin Page provides tools for administrators to manage users, products, and orders.
+**Pastimes** is a full-stack e-commerce platform designed for buying and selling second-hand branded clothing.
 
-### Key Features
+The platform provides a seamless shopping experience for customers while giving administrators a secure dashboard to manage products, users and orders.
 
-* **User Management** – View/edit users (`tblUser`), manage roles (Admin, Seller, Buyer), deactivate accounts.
-* **Product Management** – Add, edit, delete items (`tblclothes`).
-* **Order Management** – View/update orders (`tblorders`).
-* **Category Management** – Update product categories.
-* **Reports** – Generate sales and activity reports.
-* **Messages** – Send/receive messages with buyers and sellers.
-
-### Components
-
-1. **User Management** – Full control over users and roles.
-2. **Product Management** – Add/edit/remove product listings.
-3. **Order Management** – View orders, update status (Pending, Shipped, Delivered).
-4. **Messages** – Communication tool between admins, buyers, sellers.
-
-### Page Flow
-
-1. Login → 2. Dashboard → 3. Manage Users → 4. Manage Products → 5. Manage Orders → 6. Messages
+The system supports product browsing, shopping cart functionality, checkout, order management and user administration through a responsive web interface backed by a MySQL database.
 
 ---
 
-## Technical Details
+# Project Highlights
 
-### Database Schema
-
-* **Users Table (`tblUser`)** – Stores user info (name, email, hashed password, role).
-* **Products Table (`tblclothes`)** – Stores product details (name, price, category, description).
-* **Orders Table (`tblorders`)** – Stores order info (total, shipping, payment).
-* **Order Items Table (`tblorder_items`)** – Stores detailed info about ordered items.
-
-### Back-End Functionality
-
-* **Buyer Side** – Product fetching (PHP + MySQL), session-based cart, checkout stored in `tblorders` and `tblorder_items`.
-* **Admin Side** – Role-based access, database CRUD for products/users, order management.
-
-### Front-End Components
-
-* **HTML** – Page structure.
-* **CSS** – Styling (forms, buttons, grids).
-* **JavaScript** – Interactivity (cart updates, totals).
+- Full-stack e-commerce platform
+- Shopping cart and checkout system
+- Role-based user management
+- Product and inventory management
+- Order management dashboard
+- Sales reporting functionality
+- MySQL relational database
+- Responsive user interface
+- Complete project demonstration
 
 ---
 
-## Setup & Installation
+# Features
 
-1. Clone this repository:
+## Customer Portal
 
-   ```bash
-   git clone <repo-url>
-   ```
-2. Set up a local server (WAMP/XAMPP).
-3. Import SQL file to create tables (`tblUser`, `tblclothes`, `tblorders`).
-4. Update database connection details in PHP files.
-5. Run the website on your local server.
+Customers can:
+
+- Browse second-hand clothing
+- Search products
+- Filter by category, size and price
+- Add items to a shopping cart
+- Manage cart contents
+- Complete the checkout process
+- View order confirmation
 
 ---
 
-## Conclusion
+## Administrator Portal
 
-The **Pastimes Website** delivers a smooth shopping experience for buyers and efficient management tools for administrators. This README serves as a guide to the system’s features, technical setup, and workflow.
+Administrators can:
+
+- Manage users
+- Manage products
+- Update product categories
+- View customer orders
+- Update order statuses
+- Generate reports
+- Manage customer communications
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Backend
+
+- PHP
+
+## Database
+
+- MySQL
+
+## Development Tools
+
+- XAMPP / WAMP
+- phpMyAdmin
+- Visual Studio Code
+- Git
+- GitHub
+
+---
+
+# Customer Features
+
+### Product Catalogue
+
+Customers can browse products organised into multiple categories including:
+
+- Women's Clothing
+- Men's Clothing
+- Children's Clothing
+- Shoes
+- Accessories
+
+---
+
+### Shopping Cart
+
+The shopping cart allows customers to:
+
+- Add products
+- Remove products
+- Update quantities
+- View cart totals
+- Continue shopping
+
+---
+
+### Checkout
+
+Customers complete purchases by providing:
+
+- Billing information
+- Shipping details
+- Payment method
+
+Orders are stored securely in the database for processing.
+
+---
+
+### Order Confirmation
+
+After checkout, customers receive confirmation including:
+
+- Order Number
+- Session ID
+- Purchase Summary
+
+---
+
+# Administrator Features
+
+### User Management
+
+Administrators can:
+
+- View users
+- Edit user information
+- Assign user roles
+- Deactivate accounts
+
+Supported roles include:
+
+- Administrator
+- Seller
+- Buyer
+
+---
+
+### Product Management
+
+Administrators can:
+
+- Add products
+- Edit products
+- Delete products
+- Update inventory
+- Manage product categories
+
+---
+
+### Order Management
+
+Orders can be:
+
+- Reviewed
+- Updated
+- Processed
+- Marked as:
+
+- Pending
+- Shipped
+- Delivered
+
+---
+
+### Reporting
+
+The system includes reporting functionality for monitoring:
+
+- Sales
+- Orders
+- User activity
+
+---
+
+# Database Design
+
+The application uses a relational MySQL database.
+
+### Tables
+
+**tblUser**
+
+Stores:
+
+- User information
+- Login credentials
+- User roles
+
+---
+
+**tblClothes**
+
+Stores:
+
+- Product information
+- Categories
+- Pricing
+- Images
+- Descriptions
+
+---
+
+**tblOrders**
+
+Stores:
+
+- Customer orders
+- Shipping information
+- Payment details
+
+---
+
+**tblOrder_Items**
+
+Stores:
+
+- Individual products linked to each order
+- Product quantities
+- Pricing
+
+---
+
+# System Workflow
+
+### Customer Journey
+
+```
+Browse Products
+        │
+        ▼
+Search & Filter
+        │
+        ▼
+Add to Cart
+        │
+        ▼
+Checkout
+        │
+        ▼
+Order Confirmation
+```
+
+---
+
+### Administrator Workflow
+
+```
+Login
+    │
+    ▼
+Dashboard
+    │
+    ▼
+Manage Products
+    │
+    ▼
+Manage Orders
+    │
+    ▼
+Generate Reports
+```
+
+---
+
+# Repository Structure
+
+```
+pastimes/
+
+├── admin/
+├── customer/
+├── css/
+├── images/
+├── includes/
+├── js/
+├── database/
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+# Running the Project
+
+Clone the repository
+
+```bash
+git clone https://github.com/Lwandle-Chauke/pastimes.git
+```
+
+### Requirements
+
+- PHP 8+
+- MySQL
+- Apache Server
+- XAMPP or WAMP
+
+### Installation
+
+1. Clone the repository.
+2. Place the project inside the **htdocs** directory.
+3. Start Apache and MySQL.
+4. Import the SQL database using phpMyAdmin.
+5. Update the database connection details.
+6. Open the project in your browser.
+
+---
+
+# Demo
+
+A complete walkthrough of the application is available below.
+
+**Google Drive**
+
+https://drive.google.com/file/d/1KHlOpZil4siDrspNQkpLq0tC2PVSvRSN/view?usp=sharing
+
+---
+
+# What I Learned
+
+This project strengthened my understanding of:
+
+- Full-stack web development
+- PHP application development
+- MySQL database design
+- Session management
+- CRUD operations
+- Relational databases
+- User authentication
+- Role-based access control
+- E-commerce workflows
+- Building responsive web applications
+
+---
+
+# Future Improvements
+
+Planned enhancements include:
+
+- Secure payment gateway integration
+- Email notifications
+- Wishlist functionality
+- Product reviews and ratings
+- Order tracking
+- Image optimisation
+- Advanced analytics dashboard
+- Responsive mobile-first redesign
+- REST API integration
+
+---
+
+# About Me
+
+I'm **Lwandle Chauke**, a Computer Science graduate with interests in:
+
+- Software Engineering
+- Cybersecurity
+- Full-Stack Development
+- DevSecOps
+
+I'm passionate about building secure, scalable applications while continuously expanding my knowledge of modern software development.
+
+**GitHub**
+
+https://github.com/Lwandle-Chauke
+
+---
+
+<div align="center">
+
+If you found this project interesting, feel free to star the repository!
+
+</div>
