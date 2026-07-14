@@ -314,7 +314,7 @@ pastimes/
 Clone the repository
 
 ```bash
-git clone https://github.com/Lwandle-Chauke/pastimes.git
+git clone https://github.com/Lwandle-Chauke/pastimes-ecommerce-platform.git
 ```
 
 ### Requirements
